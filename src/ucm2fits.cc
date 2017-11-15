@@ -158,7 +158,7 @@ int main(int argc, char* argv[]){
         strcpy(tform[1],(Subs::str(value_max) + "A").c_str());
         strcpy(tform[2],(Subs::str(comment_max) + "A").c_str());
 
-        const string::size_type MAXCHAR = std::max(std::max(name_max, value_max), comment_max);
+        const std::string::size_type MAXCHAR = std::max(std::max(name_max, value_max), comment_max);
         p = new char[MAXCHAR+1];
 
         if(split){
